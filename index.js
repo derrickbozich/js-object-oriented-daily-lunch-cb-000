@@ -42,9 +42,10 @@ class Meal {
       let meal = store.meals.find(meal => meal.id === this.id);
 
       if (meal.title === this.title && (!(deliveries.includes(delivery)))) {
+          debugger
           deliveries.push(delivery);
       }
-        debugger
+
     });
     return deliveries;
   }
