@@ -47,13 +47,11 @@ class Customer {
   }
 
   deliveries(){
-    deliveries = [];
-    return store.deliveries.forEach(delivery => {
-      if (this.id === delivery.customerId) {
-        deliveries.push(delivery);
-      }
+
+    return store.deliveries.filter(delivery => {
+      delivery.customerId === this.id
     });
-    return deliveries;
+
   }
 
 }
