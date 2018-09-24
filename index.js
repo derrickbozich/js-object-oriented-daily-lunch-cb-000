@@ -9,7 +9,7 @@ class Neighborhood {
   constructor(name) {
     this.name = name;
     this.id = ++neighborhoodId;
-    store.push(this);
+    store.neighborhoods.push(this);
   }
 }
 
@@ -18,7 +18,7 @@ class Meal {
     this.name = name;
     this.price = price;
     this.id = ++mealId;
-    store.push(this);
+    store.meals.push(this);
   }
 }
 
@@ -27,7 +27,7 @@ class Customer {
     this.name = name;
     this.neighborhoodId = neighborhoodId;
     this.id = ++customerId;
-    store.push(this);
+    store.customers.push(this);
   }
 }
 
@@ -37,6 +37,6 @@ class Delivery {
     this.neighborhoodId = neighborhoodId;
     this.customerId = customerId;
     this.id = ++deliveryId;
-    store.push(this);
+    store.deliveries.push(this);
   }
 }
