@@ -81,6 +81,13 @@ class Customer {
     });
     return meals;
   }
+
+  totalSpent(){
+
+    this.meals.reduce((aggregate, meal) => {
+      debugger
+    })
+  }
 }
 
 class Delivery {
