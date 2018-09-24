@@ -47,7 +47,12 @@ class Customer {
   }
 
   deliveries(){
-    return store.deliveries.find(m => m.id === this.deliveryId);
+    deliveries = [];
+    return store.deliveries.forEach(delivery => {
+      if (this.id === delivery.customerId) {
+        deliveries.push(delivery);
+      }
+    })
   }
 
 }
