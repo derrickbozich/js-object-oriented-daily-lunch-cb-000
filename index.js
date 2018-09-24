@@ -41,6 +41,16 @@ class Meal {
       return delivery.mealId === this.id;
     });
   }
+
+  customers(){
+    let customers = [];
+    this.deliveries().forEach(delivery => {
+      let customer = store.customers.find(c => c.id === delivery.customerId);
+      if (!(customers.includes(customer))) {
+        customers.push(customer);
+      }
+    })
+  }
 }
 
 class Customer {
