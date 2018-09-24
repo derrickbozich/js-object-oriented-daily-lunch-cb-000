@@ -36,6 +36,16 @@ class Meal {
     this.id = ++mealId;
     store.meals.push(this);
   }
+  deliveries(){
+    let deliveries = [];
+    store.deliveries.forEach(delivery => {
+      let meal = store.meals.find(meal => meal.id === this.id);
+      if (meal.title === this.title) {
+        deliveries.push(delivery);
+      }
+    });
+    return deliveries;
+  }
 }
 
 class Customer {
@@ -57,9 +67,7 @@ class Customer {
       meals.push(meal);
     });
     return meals;
-
   }
-
 }
 
 class Delivery {
