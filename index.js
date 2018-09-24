@@ -30,7 +30,7 @@ class Neighborhood {
 
   meals(){
     let meals = [];
-    this.deliveries.forEach(delivery =>{
+    this.deliveries().forEach(delivery =>{
       let meal = store.meals.find(meal => meal.id === delivery.mealId);
       if (!(meals.includes(meal))) {
         meals.push(meal)
