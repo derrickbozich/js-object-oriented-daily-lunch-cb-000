@@ -41,10 +41,7 @@ class Meal {
     store.deliveries.forEach(delivery => {
       let meal = store.meals.find(meal => meal.id === this.id);
       if (meal.title === this.title) {
-      
           deliveries.push(delivery);
-        
-
       }
     });
     debugger
