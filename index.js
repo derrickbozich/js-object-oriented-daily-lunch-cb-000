@@ -18,9 +18,8 @@ class Neighborhood {
   }
 
   customers(){
-    return this.deliveries().filter((delivery) => {
+    this.deliveries().forEach((delivery) => {
       debugger
-      return this.id === customer.neighborhoodId
     });
   }
 }
