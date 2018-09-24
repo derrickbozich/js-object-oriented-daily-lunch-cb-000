@@ -84,7 +84,7 @@ class Customer {
 
   totalSpent(){
 
-    this.meals.reduce((aggregate, meal) => {
+    this.meals().reduce((aggregate, meal) => {
       debugger
     })
   }
