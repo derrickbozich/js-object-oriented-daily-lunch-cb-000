@@ -38,16 +38,9 @@ class Meal {
   }
   deliveries(){
     let deliveries = [];
-    store.deliveries.forEach(delivery => {
-      let meal = store.meals.find(meal => meal.id === this.id);
-
-      if (meal.title === this.title && (!(deliveries.includes(delivery)))) {
-          debugger
-          deliveries.push(delivery);
-      }
-
-    });
-    return deliveries;
+    store.deliveries.filter(delivery =>{
+      delivery.mealId === this.id;
+    })
   }
 }
 
