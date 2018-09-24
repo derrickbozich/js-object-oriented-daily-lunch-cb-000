@@ -26,7 +26,6 @@ class Neighborhood {
       }
 
     });
-    debugger
     return customers
   }
 }
