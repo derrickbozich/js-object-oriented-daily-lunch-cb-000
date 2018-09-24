@@ -24,7 +24,6 @@ class Neighborhood {
       if (!(customers.includes(result))) {
           customers.push(result);
       }
-
     });
     return customers
   }
