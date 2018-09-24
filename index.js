@@ -44,9 +44,10 @@ class Meal {
         if (!(deliveries.includes(delivery))) {
           deliveries.push(delivery);
         }
-        
+
       }
     });
+    debugger
     return deliveries;
   }
 }
