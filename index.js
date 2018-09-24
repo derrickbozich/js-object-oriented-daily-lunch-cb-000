@@ -43,7 +43,7 @@ class Meal {
       if (meal.title === this.title) {
       
           deliveries.push(delivery);
-
+        
 
       }
     });
