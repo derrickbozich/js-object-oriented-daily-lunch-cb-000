@@ -27,6 +27,17 @@ class Neighborhood {
     });
     return customers
   }
+
+  meals(){
+    let meals = [];
+    this.deliveries.forEach(delivery =>{
+      let meal = store.meals.find(meal => meal.id === delivery.mealId);
+      if (!(meals.includes(meal))) {
+        meals.push(meal)
+      }
+    });
+    return meals;
+  }
 }
 
 class Meal {
