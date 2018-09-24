@@ -52,7 +52,8 @@ class Customer {
       if (this.id === delivery.customerId) {
         deliveries.push(delivery);
       }
-    })
+    });
+    return deliveries;
   }
 
 }
