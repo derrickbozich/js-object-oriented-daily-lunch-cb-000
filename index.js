@@ -40,11 +40,11 @@ class Meal {
     let deliveries = [];
     store.deliveries.forEach(delivery => {
       let meal = store.meals.find(meal => meal.id === this.id);
+      debugger
       if (meal.title === this.title) {
           deliveries.push(delivery);
       }
     });
-    debugger
     return deliveries;
   }
 }
