@@ -21,7 +21,7 @@ class Neighborhood {
     let customers = [];
     this.deliveries().forEach((delivery) => {
       let result = store.customers.find((customer) => customer.id === delivery.customerId);
-      if (!customers.includes(result)) {
+      if (!(customers.includes(result))) {
           customers.push(result);
       }
 
