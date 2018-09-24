@@ -28,6 +28,7 @@ class Neighborhood {
     this.deliveries().forEach((delivery) => {
       let result = store.customers.find((customer) => customer.id === delivery.customerId);
     });
+    debugger
     return customers.unique();
   }
 }
