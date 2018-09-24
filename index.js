@@ -49,7 +49,7 @@ class Meal {
       if (!(customers.includes(customer))) {
         customers.push(customer);
       }
-    })
+    });
   }
 }
 
