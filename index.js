@@ -56,7 +56,7 @@ class Customer {
       let meal = store.meals.find(m => m.id === delivery.mealId);
       meals.push(meal);
     });
-
+    return meals;
 
   }
 
