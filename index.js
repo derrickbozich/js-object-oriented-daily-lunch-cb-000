@@ -38,6 +38,7 @@ class Meal {
   }
   deliveries(){
     return store.deliveries.filter(delivery =>{
+      debugger
       delivery.mealId === this.id;
     })
   }
