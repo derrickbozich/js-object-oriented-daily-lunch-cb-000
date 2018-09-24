@@ -5,12 +5,6 @@ let mealId = 0;
 let customerId = 0;
 let deliveryId = 0;
 
-// Array.prototype.unique = function() {
-//   return this.filter(function (value, index, self) {
-//     return self.indexOf(value) === index;
-//   });
-// }
-
 class Neighborhood {
   constructor(name) {
     this.name = name;
@@ -27,10 +21,13 @@ class Neighborhood {
     let customers = [];
     this.deliveries().forEach((delivery) => {
       let result = store.customers.find((customer) => customer.id === delivery.customerId);
-      customers.push(result);
+      if (!custmers.includes(result)) {
+          customers.push(result);
+      }
+
     });
     debugger
-    return customers.unique();
+    return customers
   }
 }
 
