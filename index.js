@@ -23,7 +23,7 @@ class Neighborhood {
       customers.push(store.customers.find((customer) => customer.id === delivery.customerId));
     });
     debugger
-    return customers
+    // return customers
   }
 }
 
