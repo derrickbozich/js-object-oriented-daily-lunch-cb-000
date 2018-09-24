@@ -11,6 +11,9 @@ class Neighborhood {
     this.id = ++neighborhoodId;
     store.neighborhoods.push(this);
   }
+  deliveries(){
+    
+  }
 }
 
 class Meal {
