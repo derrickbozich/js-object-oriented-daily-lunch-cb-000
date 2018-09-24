@@ -84,8 +84,7 @@ class Customer {
 
   totalSpent(){
     const callback = function (accumulator, meal) { return accumulator + meal.price}
-    let result = this.meals().reduce(callback, 0)
-    debugger
+    return result = this.meals().reduce(callback, 0);
   }
 }
 
