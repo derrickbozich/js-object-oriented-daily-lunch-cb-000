@@ -16,6 +16,13 @@ class Neighborhood {
       return this.id === delivery.neighborhoodId
     });
   }
+
+  customers(){
+    return this.deliveries().filter((delivery) => {
+      debugger
+      return this.id === customer.neighborhoodId
+    });
+  }
 }
 
 class Meal {
