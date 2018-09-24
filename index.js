@@ -60,4 +60,8 @@ class Delivery {
   meal(){
     return store.meals.find(m => m.id === this.mealId);
   }
+
+  customer(){
+    return store.customers.find(c => c.id === this.customerId);
+  }
 }
