@@ -19,6 +19,7 @@ class Neighborhood {
 
   customers(){
     this.deliveries().forEach((delivery) => {
+
       debugger
     });
   }
@@ -39,6 +40,9 @@ class Customer {
     this.neighborhoodId = neighborhoodId;
     this.id = ++customerId;
     store.customers.push(this);
+  }
+  all(){
+    return store.customers;
   }
 }
 
