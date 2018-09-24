@@ -20,8 +20,9 @@ class Neighborhood {
   customers(){
     let customers = [];
     this.deliveries().forEach((delivery) => {
+        debugger
       result = store.customers.find((customer) => customer.id === delivery.customerId);
-      debugger
+
     });
   }
 }
