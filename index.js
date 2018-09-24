@@ -5,6 +5,12 @@ let mealId = 0;
 let customerId = 0;
 let deliveryId = 0;
 
+Array.prototype.unique = function() {
+  return this.filter(function (value, index, self) {
+    return self.indexOf(value) === index;
+  });
+}
+
 class Neighborhood {
   constructor(name) {
     this.name = name;
