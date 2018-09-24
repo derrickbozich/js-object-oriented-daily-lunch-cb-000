@@ -50,6 +50,7 @@ class Meal {
         customers.push(customer);
       }
     });
+    return customers;
   }
 }
 
